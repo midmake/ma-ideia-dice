@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#0b0710" />
+    <meta name="description" content="MÁ IDEIA — experiência de dado 3D interativo." />
+    <title>MÁ IDEIA | Dado</title>
+  </head>
+  <body>
+    <main class="experience-shell" aria-label="MÁ IDEIA — Dado 3D">
+      <div class="brand" aria-label="MÁ IDEIA">MÁ IDEIA</div>
+
+      <section class="stage" aria-label="Dado interativo">
+        <canvas id="dice-canvas" aria-label="Dado tridimensional. Toque para jogar."></canvas>
+        <div class="stage-vignette" aria-hidden="true"></div>
+      </section>
+
+      <section class="controls" aria-live="polite">
+        <div id="result" class="result" aria-hidden="true"></div>
+        <button id="roll-button" class="roll-button" type="button">TOQUE PARA JOGAR</button>
+        <p id="status" class="status">toque no dado ou no botão</p>
+      </section>
+    </main>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
