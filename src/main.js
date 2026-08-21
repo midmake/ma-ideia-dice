@@ -1,4 +1,3 @@
-import './styles.css';
 import { gameConfig } from './config/gameConfig.js';
 import { DiceExperience } from './engine/DiceExperience.js';
 
