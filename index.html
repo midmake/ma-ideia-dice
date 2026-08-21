@@ -6,6 +6,15 @@
     <meta name="theme-color" content="#0b0710" />
     <meta name="description" content="MÁ IDEIA — experiência de dado 3D interativo." />
     <title>MÁ IDEIA | Dado</title>
+    <link rel="stylesheet" href="./src/styles.css" />
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://cdn.jsdelivr.net/npm/three@0.179.1/build/three.module.js",
+          "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.179.1/examples/jsm/"
+        }
+      }
+    </script>
   </head>
   <body>
     <main class="experience-shell" aria-label="MÁ IDEIA — Dado 3D">
@@ -23,6 +32,6 @@
       </section>
     </main>
 
-    <script type="module" src="/src/main.js"></script>
+    <script type="module" src="./src/main.js"></script>
   </body>
 </html>
