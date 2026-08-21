@@ -1,7 +1,6 @@
 export const gameConfig = {
   name: 'Dado',
   brand: 'MÁ IDEIA',
-  // Cada face tem a mesma chance. Resultados podem se repetir em faces diferentes.
   faces: [
     { id: 1, result: 'BEIJO' },
     { id: 2, result: 'TAPA' },
@@ -12,14 +11,9 @@ export const gameConfig = {
   ],
 
   model: {
-    // Nesta fase usamos o modelo procedural WebGL.
-    // Quando o GLB chegar, altere para true e mantenha todo o restante do app.
     useExternalModel: false,
-    url: `${import.meta.env.BASE_URL}models/dado-ma-ideia.glb`,
+    url: './models/dado-ma-ideia.glb',
     scale: 1,
-
-    // Normal local de cada face. Ao trocar pelo GLB real, só calibre este mapa
-    // caso a orientação do arquivo 3D seja diferente da peça provisória.
     faceNormals: {
       1: [0, 0, 1],
       2: [1, 0, 0],
